@@ -1,0 +1,120 @@
+:root {
+    --fundo: #000000;
+    --texto: #ffffff;
+    --secundario: #b0b0b0;
+    --neon-blue: #00ffff;
+    --neon-purple: #a020f0;
+    --botao: #5c33ff;
+    --hover-blue: #00e0ff;
+    --grafite: #1a1a1a;
+    --borda-radius-xl: 1rem;
+    --borda-radius-2xl: 1.5rem;
+    --fonte-principal: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* CABECALHO */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20%;
+    background-color: var(--grafite);
+    border-bottom: 1px solid var(--secundario);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.logo span {
+    color: var(--neon-blue);
+}
+
+.navegacao ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navegacao ul a{
+    text-decoration: none;
+    color: var(--texto);
+    transition: 0.3s;
+}
+
+
+/* CABECALHO */
+
+/* CONTEUDO */
+
+.conteudo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 20%;
+}
+
+.conteudo h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo span {
+    color: var(--neon-blue);
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon a{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid var(--secundario);
+    color: transparent;
+}
+
+.icon a:hover {
+    border: 3px solid var(--neon-blue);
+}
+
+.icon a img {
+    width: 3rem;
+    height: 4rem;
+    transition: 0.3s;
+}
+
+.linkedin a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* CONTEUDO */
