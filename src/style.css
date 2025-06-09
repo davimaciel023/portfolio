@@ -85,4 +85,75 @@ nav {
     text-decoration: none;
     font-weight: 550;
     transition: 0.3s linear;
+} 
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #077b32;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .links a:hover {
+    color: #077b32;
+}
+
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+    background-color: #077b32;
+}
+
+section {
+    width: 100%;
+    min-height: 90vh;
+}
+
+section .main-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.main-container .image {
+    width: 500px;
+    height: 80vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 40px 10px #077b32;
+}
+
+.main-container .image img {
+    width: 100%;
+    scale: 0.8;
+}
+
+.main-container .image:hover {
+    animation: animate 1.5s ease-in-out;
 }
