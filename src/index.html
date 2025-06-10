@@ -1,252 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Davi Maciel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    
-    <!-- NavBar -->
 
+<!-- NavBar -->
+<nav>
+<div class="nav-container">
+    <div class="logo">Davi <span>Maciel</span></div>
+    <div class="links">
+    <div class="link"><a href="#">Home</a></div>
+    <div class="link"><a href="#">About</a></div>
+    <div class="link"><a href="#">Skills</a></div>
+    <div class="link"><a href="#">Services</a></div>
+    <div class="link"><a href="#">Contact</a></div>
+    </div>
+    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+</div>
+<div class="dropdown">
+    <div class="links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Skills</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+</div>
+</nav>
 
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                Davi <span>Maciel</span>
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+<!-- Hero Section -->
+<section>
+<div class="main-container">
+    <div class="image">
+    <img src="assets/img/WhatsApp_Image_2025-05-09_at_21.08.51-removebg-preview.png" alt="My photo" />
+    </div>
+    <div class="content">
+    <h1 data-aos="fade-left">Hey, I'm <span>Davi</span></h1>
+    <div class="typewriter">I'm a <span class="typewriter-text"></span><label>|</label></div>
+    <p>
+        I'm a passionate Web Developer and Front-End enthusiast from Ceará, Brazil.
+        I love building clean, responsive, and user-focused websites and applications.
+        With skills in Angular, Ionic, Firebase, JavaScript, and more, I focus on bringing ideas to life through code and creativity.
+    </p>
+    <div class="social-links">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="btn">
+        <button>Hire me</button>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+<div class="content">
+    <div class="title"><span>About Me</span></div>
+    <div class="about-details">
+    <div class="left">
+        <img src="assets/img/WhatsApp_Image_2025-05-09_at_21.08.51-removebg-preview.png" alt="My photo" />
+    </div>
+    <div class="right">
+        <p class="about-text">
+        I'm <span>Davi Maciel</span>, a dedicated <span>Web Developer & Front-End Developer</span>.
+        I enjoy transforming ideas into reality through coding, with a strong focus on performance, design, and user experience.
+        </p>
+        <div class="exp-area">
+        <p class="exp">Experience: <span>1 Year</span></p>
+        <p class="exp">Specialty: <span>Web Development & Front-End</span></p>
+        <p class="exp">Address: <span>Ceará, Brazil</span></p>
+        <p class="exp">Email: <span>davimaciel077@gmail.com</span></p>
+        <p class="exp">Phone: <span>+55 (88) 9 9765-2424</span></p>
+        <p class="exp">Freelancer: <span>Available</span></p>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
+        <div class="button">
+        <button>View All Projects</button>
         </div>
-    </nav>
-    <section>
-        <div class="main-container">
-            <div class="image">
-                <img src="assets/img/WhatsApp_Image_2025-05-09_at_21.08.51-removebg-preview.png" alt="Foto minha">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left">Hey I'm <span>Davi</span></h1>
-                <div class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem, maiores eius perferendis cupiditate eveniet delectus, dolore in eligendi quas nihil illo ab voluptate natus rerum ducimus quasi alias, adipisci aut aliquid? Mollitia, accusantium id quo provident eveniet illo officia, dolorum quam dolor a iure quas nulla quasi. Earum, fugiat.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <div class="btn">
-                    <button>Hire me</button>
-                </div>
-            </div> 
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+<div class="content">
+    <div class="title"><span>My Skills</span></div>
+    <div class="skills-details">
+    <div class="text">
+        <div class="topic">Skills Reflect Our Knowledge</div>
+        <p>
+        I believe in continuous learning and practical experience. My skills have been developed through real projects and passion for technology.
+        </p>
+        <div class="experience">
+        <div class="num">1</div>
+        <div class="exp">Year of <br>Experience</div>
         </div>
-    </section>
+    </div>
+    </div>
+    <div class="boxes">
+    <div class="box"><div class="topic">HTML</div><div class="per">95%</div></div>
+    <div class="box"><div class="topic">CSS</div><div class="per">90%</div></div>
+    <div class="box"><div class="topic">JavaScript</div><div class="per">80%</div></div>
+    <div class="box"><div class="topic">Angular</div><div class="per">80%</div></div>
+    <div class="box"><div class="topic">Ionic</div><div class="per">75%</div></div>
+    <div class="box"><div class="topic">Firebase</div><div class="per">70%</div></div>
+    <div class="box"><div class="topic">Python</div><div class="per">60%</div></div>
+    </div>
+</div>
+</section>
 
-    <!-- ABOUT -->
+<!-- Services Section -->
+<section class="services" id="services">
+<div class="content">
+    <div class="title"><span>My Services</span></div>
+    <div class="boxes">
+    <div class="box">
+        <div class="icon"><i class="fas fa-desktop"></i></div>
+        <div class="topic">Web Development</div>
+        <p>I build responsive websites, landing pages and web applications using modern frameworks like Angular and tools like Firebase.</p>
+    </div>
+    <div class="box">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="topic">UI Design</div>
+        <p>Clean, modern, and functional UI layouts using HTML, CSS, and design principles focused on user experience.</p>
+    </div>
+    <div class="box">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <div class="topic">Database Integration</div>
+        <p>Experience with Firebase Realtime Database and Firestore to store and retrieve user data efficiently and securely.</p>
+    </div>
+    <div class="box">
+        <div class="icon"><i class="fas fa-bolt"></i></div>
+        <div class="topic">Service Automations</div>
+        <p>Automation of repetitive processes and task flows using JavaScript, APIs, and backend integrations.</p>
+    </div>
+    </div>
+</div>
+</section>
 
-    <section class="about" id="about">
-        <div class="content">
-            <div class="title"><span>About Me</span></div>
-            <div class="about-details">
-                <div class="left">
-                    <img src="assets/img/WhatsApp_Image_2025-05-09_at_21.08.51-removebg-preview.png" alt="Foto minha">
-                </div>
-                <div class="right">
-                    <p class="about-text">I'm <span>Davi Maciel</span> and i'm <span>Web developer & Devloper Front End</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatibus alias. Veniam, iste dolor. Sed cum placeat distinctio quibusdam incidunt, eveniet nam qui ducimus corporis, vero harum quidem illo rem excepturi fuga repellendus sequi voluptates expedita autem facere consequuntur odio.</p>
-                    <div class="exp-area">
-                        <p class="exp">
-                            Experience:
-                            <span>1 Year</span>
-                        </p>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+<div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="tex">
+    <div class="topic">Have a Project?</div>
+    <p>If you have an idea or project and want to collaborate, feel free to contact me using the form below.</p>
+    </div>
 
-                        <p class="exp">
-                            Speciality: 
-                            <span>Web Developer & Front End Developer</span>
-                        </p>
+    <div class="contact-form-container">
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-                        <p class="exp">
-                            Address:
-                            <span>Ceará, Brasil</span>
-                        </p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                        <p class="exp">
-                            Email:
-                            <span>davimaciel077@gmail.com</span>
-                        </p>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
 
-                        <p class="exp">
-                            Phone: 
-                            <span>
-                                +55 (88) 9 9765-2424
-                            </span>
-                        </p>
-                        <p class="exp">
-                            Freelancer: 
-                            <span>Avaliable</span>
-                        </p>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    </div>
-                    <div class="button">
-                        <button>View All Projects</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+    </div>
+</div>
+</section>
 
-
-    <!-- My Skill -->
-    <section class="skills" id="skills">
-
-        <div class="content">
-            <div class="title"> <span>My Skills</span></div>
-            <div class="skills-details">
-                <div class="text">
-                    <div class="topic">Skills Reflects Our Knowledge</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reprehenderit id, aliquam laborum ut praesentium in dignissimos magni aspernatur corporis!</p>
-                    <div class="experience">
-                        <div class="num">10</div>
-                        <div class="exp">Years Of <br>
-                        Experience
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic">HTML</div>
-                    <div class="per">95%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">CSS</div>
-                    <div class="per">90%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">ANGULAR</div>
-                    <div class="per">80%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">IONIC</div>
-                    <div class="per">75%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">FIREBASE</div>
-                    <div class="per">65%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">PYTHON</div>
-                    <div class="per">60%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">JAVASCRIPT</div>
-                    <div class="per">60%</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="services" id="services">
-        <div class="content">
-            <div class="title"><span>My Services</span></div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <div class="topic">Web Devlopment</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore dolores sed possimus vitae. Minima dolorum quo deleniti illo voluptas?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-
-    <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Contact Me</span></div>
-            <div class="tex">
-                <div class="topic">Have Any Projetcs?</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor pariatur quo omnis labore nihil deleniti optio consectetur quod exercitationem.</p>
-            </div>
-
-            <div class="contact-form-container">
-                <form class="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-
-                    <button type="submit" class="contact-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-        <div class="text">
-            <span>Create By </span><a href="#">davimaciel077</a> | &#169; 2025 All Rights Reserved
-        </div>
-    </footer>
-
+<!-- Footer -->
+<footer>
+<div class="text">
+    <span>Created by </span><a href="#">davimaciel077</a> | &#169; 2025 All Rights Reserved
+</div>
+</footer>
 
 </body>
 </html>
